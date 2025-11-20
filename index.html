@@ -18,11 +18,12 @@
     <header>
       <nav>
         <div id="logotype-wrapper" class="logo">
-          <a href="index.html"> LOGO-TYPE </a>
+          <a href="index.html"> RED BUT STILL FABULOUS </a>
         </div>
         <ul class="menu">
-          <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
-          <li><a class="menuItem" href="register.html">Indberet</a></li>
+          <li><a class="menuItem" href="instruction.html">TOASTED BUT TRENDY</a></li>
+          <li><a class="menuItem" href="register.html">CALL 911</a></li>
+          <button id="toggle">Dark mode on</button>
         </ul>
         <button class="burger">
           <span class="line"></span>
@@ -33,56 +34,114 @@
     </header>
     <section id="main-disclamer">
       <div id="main-disclamer-content">
-        <img src="warning" alt="ICON" />
+        <img class="icon" src="img/BCO.83145828-21ef-4ac6-ad66-30f8b437243f.png" alt="ICON" />
         <div>
-          <h1>OVERSKRIFT</h1>
-          <p class="sub">Underrubrik</p>
+          <h1>EMERGENCY! Sol, sommer og… kløe deluxe!</h1>
+          <p class="sub">SPF 5? Så kan du lige så godt smøre dig ind i smør!</p>
         </div>
       </div>
     </section>
     <main>
       <section id="daily">
         <article class="daily_card">
-          <img src="" alt="teaser_img" />
+          <img src="img/BCO.2f9de921-c3ee-4f70-807e-f8334d9670c3.png" alt="teaser_img" />
           <div class="daily_text">
-            <h2>Teaser</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-              magnam ducimus ea, sed minima asperiores.
-            </p>
-            <a href="" class="cta_btn">Se mere</a>
+            <details>
+              <summary class="cta_btn">Find din kur til at undgå soleksem</summary>
+              <div class="content-box">
+                <p>
+                  Du kender det. Du har smurt dig ind i solcreme, du har siddet under parasollen, du har endda googlet “kan man få soleksem af skygge?” – og alligevel ligner din hud en blanding af jordbærgrød og sandpapir. Kløen starter som en lille
+                  prik, og før du ved af det, står du og gnubber dig mod en lygtepæl som en kat i brunst. Men frygt ej! Vi har samlet de bedste (og mest tålelige) tricks til at undgå soleksem – uden at du skal pakke dig ind i alufolie eller leve i en
+                  mørk kælder hele sommeren. Fra magiske cremer og anti-kløe hacks til “hvordan du ikke ligner en stegt reje på stranden”-guiden. 💡 Læs med og få: Den rigtige solcreme (spoiler: SPF 10 er ikke nok, Karen) Tips til tøj, der beskytter
+                  uden at få dig til at ligne en teltsælger Og den vigtigste regel af dem alle: Sved er ikke solbeskyttelse Din hud vil takke dig. Din parasol vil få en pause. Og du slipper for at klø dig som en gal i Netto.
+                </p>
+                <a href="instruction.html" class="cta_btn">Se mere</a>
+              </div>
+            </details>
           </div>
         </article>
+
         <article class="daily_card">
-          <img src="" alt="teaser_img" />
+          <img src="img/BCO.e6fe5ef4-a13b-46df-b8b3-56699768b538.png" alt="teaser_img" />
           <div class="daily_text">
-            <h2>Teaser</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-              magnam ducimus ea, sed minima asperiores.
-            </p>
-            <a href="" class="cta_btn">Se mere</a>
+            <details>
+              <summary class="cta_btn">Din guide til at undgå rødme, læs mere her.</summary>
+              <div class="content-box">
+                <p>
+                  Du har pakket strandtasken, smurt dig ind i SPF 50 (eller var det 15?), og du har lovet dig selv at blive i skyggen. Alligevel står du der, rød som en grillpølse og klør dig som en hund med lopper. Soleksem har ingen nåde – og din
+                  hud har tydeligvis ikke læst vejledningen. Men bare rolig. Vi har samlet de bedste tricks, råd og “hvorfor har ingen sagt det her før?”-tips til dig, der gerne vil nyde solen uden at ligne en levende peberfrugt. Fra geniale
+                  solcremer og anti-kløe hacks til tøj, der beskytter uden at få dig til at ligne en vandrende teltdug. 💡 I denne guide får du: Den ægte kur mod soleksem (spoiler: det er ikke bare “drik vand”) Tips til solvenlige rutiner, der
+                  faktisk virker Og vigtigst af alt: hvordan du undgår at blive strandens kløende komedie Så drop panikkløen og læs med – din hud vil takke dig, og du slipper for at gnubbe dig op ad alt med tekstur.
+                </p>
+                <a href="instruction.html" class="cta_btn">Se mere</a>
+              </div>
+            </details>
           </div>
         </article>
       </section>
+
       <section id="breaking">
         <article class="news_card">
-          <h3>Nyhed</h3>
-          <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-          <img src="" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
+          <h3>Når solen giver dig prikker i stedet for glød</h3>
+          <p>Endelig sommer! Sol, strand og kolde drikke, men hov...</p>
+          <img src="img/IMG_2316.jpg" alt="news_img" />
+          <button class="cta_btn" popovertarget="news_popover1">Læs mere</button>
+          <div popover id="news_popover1">
+            <h1 class="artikel1">Når solen giver dig prikker i stedet for glød</h1>
+            <h2>
+              Vi kender det allesammen – solen skinner, stranden kalder, og solcremen ligger glemt i tasken. Et par timer senere er huden varm, rød og fuld af små prikker, som klør og brokker sig. Soleksem er ikke farligt, men det kan hurtigt
+              ødelægge sommerstemningen. Så før du drømmer om den perfekte tan, så husk: lidt sol er godt – for meget er bare prikker i regningen.
+            </h2>
+            <p>
+              Endelig sommer! Sol, strand og kolde drikke – men hov, hvorfor klør det på skuldrene? Tillykke, du har måske fået soleksem! Det er hudens måde at sige: “Jeg gider altså ikke blive stegt mere.” Soleksem kommer, når huden får for meget
+              sol uden ordentlig beskyttelse. Resultatet? Rødme, kløe og små prikker, der får dig til at ligne et levende polkaprint. Løsningen er faktisk simpel: solcreme med høj faktor, skygge midt på dagen og lidt tøj på kroppen (ja, selvom du
+              gerne vil vise tan-linjen). Hvis skaden allerede er sket, så hop i skyggen, smør med aloe vera og drik masser af vand – du er ikke en grillkylling, selvom du lugter af solcreme. Så næste gang du tager ud i solen: husk – smør dig, før
+              solen smører dig!
+            </p>
+            <img src="img/IMG_2316.jpg" alt="Soleksem" />
+            <button class="cta_btn" popovertarget="news_popover1">Luk</button>
+          </div>
         </article>
         <article class="news_card">
-          <h3>Nyhed</h3>
-          <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-          <img src="" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
+          <h3>Soleksem: Den skjulte sommer-irritation</h3>
+          <p>Solen er fantastisk, den giver energi, glæde og farve i kinderne. Men...</p>
+          <img src="img/BCO.90bf24bd-252c-4d52-b4f5-a07aff4be286.png" alt="news_img" />
+          <button class="cta_btn" popovertarget="news_popover2">Læs mere</button>
+          <div popover id="news_popover2">
+            <h1 class="artikel2">Soleksem: Den skjulte sommer-irritation</h1>
+            <h2>
+              Solen er vores trofaste følgesvend om sommeren – men den kan også være en skjult udfordring for huden. Når vi endelig nyder varmen efter en lang vinter, glemmer vi ofte, hvor stærke solens stråler egentlig er. Det kan føre til soleksem
+              – den kløende, røde påmindelse om, at huden også har grænser. Heldigvis kan lidt solfornuft, en god solcreme og skygge på det rigtige tidspunkt gøre hele forskellen mellem sund glød og irriteret hud.
+            </h2>
+            <p>
+              Solen er fantastisk – den giver energi, glæde og farve i kinderne. Men for mange mennesker giver den også noget mindre sjovt: soleksem. Soleksem er en reaktion i huden, der opstår, når du får for meget sol – især efter en lang vinter,
+              hvor huden ikke har været udsat for UV-stråler. Typiske symptomer er rødme, kløe, små knopper og varme i huden. Det kan ligne solskoldning, men er faktisk en slags allergisk reaktion. Heldigvis kan du forebygge det! Brug solcreme med
+              høj SPF (30–50), smør dig flere gange om dagen, og undgå at ligge direkte i solen midt på dagen. Hvis du får soleksem, hjælper det at gå i skygge, bruge fugtighedscreme og køle huden ned. Husk – solen er dejlig, men huden har kun ét sæt
+              batterier. Brug dem med omtanke.
+            </p>
+            <img src="img/BCO.90bf24bd-252c-4d52-b4f5-a07aff4be286.png" alt="Soleksem" />
+            <button class="cta_btn" popovertarget="news_popover2">Luk</button>
+          </div>
         </article>
         <article class="news_card">
-          <h3>Nyhed</h3>
-          <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-          <img src="" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
+          <h3>Av! Hvorfor klør min hud?</h3>
+          <p>Du skulle bare ud og blive lidt brun… og nu ligner du en prikket pandekage.</p>
+          <img src="img/BCO.f9dd9beb-4c6b-49b1-b84f-529a5f67a560.png" alt="news_img" />
+          <button class="cta_btn" popovertarget="news_popover3">Læs mere</button>
+          <div popover id="news_popover3">
+            <h1 class="artikel3">Av! Hvorfor klør min hud?</h1>
+            <h2>
+              Selvom solen giver os varme, energi og glød, kan den også være hård ved huden. Soleksem rammer mange, især når vi glemmer solcremen eller bliver lidt for længe i solen. Det starter ofte som små røde prikker og kløe, men kan hurtigt
+              blive en irriterende påmindelse om, at huden også har brug for beskyttelse. Med lidt omtanke, en god solcreme og pauser i skyggen kan du nyde solen uden ubehag – og uden at ligne en rød reje bagefter.
+            </h2>
+            <p>
+              Du skulle bare ud og blive lidt brun… og nu ligner du en prikket pandekage. Velkommen til klubben for folk med soleksem – vi mødes i skyggen kl. 14. 😉 Soleksem er, når huden får nok af solen og går i protest. Det betyder kløe, prikker
+              og rødme – ikke ligefrem det look, du håbede på. Drop SPF 5, og brug en rigtig solcreme. Smør dig, før du går ud, og igen efter badet. Og husk: solhat > solskoldning. For ja, du bliver måske lidt mindre brun – men du slipper for at
+              ligne en brændt reje.
+            </p>
+            <img src="img/BCO.f9dd9beb-4c6b-49b1-b84f-529a5f67a560.png" alt="Soleksem" />
+            <button class="cta_btn" popovertarget="news_popover3">Luk</button>
+          </div>
         </article>
       </section>
     </main>
@@ -114,6 +173,6 @@
       </nav>
     </footer>
     <script src="js/burger.js"></script>
-    <!-- <script src="js/main.js"></script> -->
+    <script src="js/main.js"></script>
   </body>
 </html>

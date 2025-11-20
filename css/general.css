@@ -30,9 +30,9 @@ main section {
 }
 
 h1 {
-  font-size: var(--font-h1-size);
-  font-weight: var(--font-weight-bold);
-  color: var(--color-text-inverted);
+  font-size: x-large;
+  font-weight: 5em;
+  color: white;
   margin: 5px 0;
   line-height: 1.3rem;
   text-align: left;
@@ -56,7 +56,7 @@ h1 {
 .sub {
   font-size: var(--font-sub1-size);
   font-weight: var(--font-weight-light);
-  color: var(--color-text-inverted);
+  color: black;
 }
 
 h2 {
@@ -67,14 +67,13 @@ h3 {
   font-size: var(--headline3-size);
 }
 
-main>h1 {
+main > h1 {
   width: calc(80% - 6rem);
 }
 
 /* NAVIGATION STRUCTURES */
-header>nav {
+header > nav {
   height: 100%;
-  background-color: var(--color-menu-bg);
 }
 
 nav ul {
@@ -96,10 +95,10 @@ nav a {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  height: 3.6rem;
+  height: 3.7rem;
 }
 
-#logotype-wrapper>a {
+#logotype-wrapper > a {
   color: var(--color-text-logotype);
   font-size: var(--font-logotype-size);
   font-weight: var(--font-weight-medium);
@@ -118,7 +117,7 @@ header nav li a {
 }
 
 /* Pilen efter menu-tekst */
-header>nav li>a:after {
+header > nav li > a:after {
   content: " \2192";
 }
 
@@ -134,4 +133,80 @@ nav a:active {
 /* FOOTER */
 footer a {
   font-size: 0.7rem;
+}
+
+.icon {
+  width: 100px;
+  height: 150px;
+}
+[popover] {
+  padding: 1rem;
+  max-height: 90vh;
+  max-width: 50ch;
+  width: 90vw;
+  margin: auto;
+}
+::backdrop {
+  background: 0008;
+}
+
+button {
+  position: sticky;
+  top: 0;
+  justify-self: end;
+}
+
+&:popover-open {
+  display: grid;
+}
+
+:popover-open {
+  display: grid;
+}
+
+.artikel1,
+.artikel2,
+.artikel3 {
+  color: black;
+  font-size: x-large;
+  margin-bottom: 2em;
+  margin-top: 1.5em;
+}
+h2 {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  color: rgb(139, 0, 5);
+  font-size: larger;
+}
+::backdrop {
+  opacity: 5;
+  transition: 1.8s allow-discrete;
+  background: rgba(211, 12, 12, 0.533);
+}
+
+:popover-open::backdrop {
+  opacity: 1;
+}
+
+@starting-style {
+  :popover-open::backdrop {
+    opacity: 0;
+  }
+}
+.content-box {
+  margin-top: 1em;
+  padding: 1em;
+  background-color: whitesmoke;
+  border: 1px solid black;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+summary.cta_btn {
+  cursor: pointer;
+  padding: 0.5em 1em;
+  background-color: #ff6600;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  list-style: none; /* fjerner pilen */
 }
