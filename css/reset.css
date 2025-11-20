@@ -121,7 +121,7 @@ form {
 /* Pseudo-classes */
 :focus-visible {
   /* virker til både knapper og input-felter, select, textarea, links mm. */
-  outline: 1px solid deeppink;
+  outline: 1px solid rgb(241, 13, 135);
   outline-offset: 1px;
 }
 .error-message {
